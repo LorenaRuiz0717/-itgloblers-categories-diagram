@@ -1,0 +1,49 @@
+.bullet__container{
+  display:flex;
+  overflow: auto;
+}
+
+.bullet__item,
+.bullet__item--image{
+    width: 80px;
+    min-width: 80px;
+}
+
+.bullet__container::-webkit-scrollbar{
+  height: 4px;
+}
+
+.bullet__container::-webkit-scrollbar-track{
+background-clip: padding-box;
+background-color: rgb(216, 216, 216);
+border-right: 16px solid transparent;
+}
+
+.bullet__container::-webkit-scrollbar-thumb{
+  background-clip: padding-box;
+  background-color: rgb(158, 158, 158);
+  border-right: 16px solid transparent;
+  }
+
+
+.bullet__item{
+  margin-right: 15px;
+}
+
+.bullet__item--link{
+    text-decoration: none;
+}
+
+.bullet__item--title{
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and(min-width:760px){
+    .bullet__item,
+    .bullet__item--image{
+        width: 100px;
+        min-width: 100px;
+    }
+}
